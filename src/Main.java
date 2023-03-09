@@ -51,32 +51,40 @@ public class Main {
         int[] numbers = new int[]{1, 2, 3};
         double[] dbl = {1.57, 7.654, 9.986};
         long[] budget = {1_000_000_000L, 345000000L, 65737509837097L};
-        for (int i = numbers.length; i >= (numbers.length)&&i>0; i--) {
-            if (i == 0) {
+        int i = 0;
+
+        for (i = numbers.length - 1; i <= (numbers.length - 1) && i >= 0; i--) {
+            if (i==0) {
                 System.out.print(numbers[i]);
             } else {
 
                 System.out.print(numbers[i] + ", ");
+
+
             }
 
         }
         System.out.println();
-        for (int i = 0; i < (dbl.length); i++) {
-            if (i == dbl.length - 1) {
+        for (i = dbl.length - 1; i <= (dbl.length - 1) && i >= 0; i--) {
+            if (i==0) {
                 System.out.print(dbl[i]);
             } else {
 
                 System.out.print(dbl[i] + ", ");
+
+
             }
 
         }
         System.out.println();
-        for (int i = 0; i < (budget.length); i++) {
-            if (i == budget.length - 1) {
+        for (i = budget.length - 1; i <= (budget.length - 1) && i >= 0; i--) {
+            if (i==0) {
                 System.out.print(budget[i]);
             } else {
 
                 System.out.print(budget[i] + ", ");
+
+
             }
 
         }
