@@ -103,6 +103,5 @@ public class Main {
                 numbers[i] = numbers[i] + 1;
             }}
             System.out.println(Arrays.toString(numbers));
-
     }
 }
