@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -54,7 +55,7 @@ public class Main {
         int i = 0;
 
         for (i = numbers.length - 1; i <= (numbers.length - 1) && i >= 0; i--) {
-            if (i==0) {
+            if (i == 0) {
                 System.out.print(numbers[i]);
             } else {
 
@@ -66,7 +67,7 @@ public class Main {
         }
         System.out.println();
         for (i = dbl.length - 1; i <= (dbl.length - 1) && i >= 0; i--) {
-            if (i==0) {
+            if (i == 0) {
                 System.out.print(dbl[i]);
             } else {
 
@@ -78,7 +79,7 @@ public class Main {
         }
         System.out.println();
         for (i = budget.length - 1; i <= (budget.length - 1) && i >= 0; i--) {
-            if (i==0) {
+            if (i == 0) {
                 System.out.print(budget[i]);
             } else {
 
@@ -88,5 +89,17 @@ public class Main {
             }
 
         }
+        System.out.println();}
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        // Пишем код для задачи 4
+        int[] numbers = new int[]{1, 2, 3};
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                numbers[i] = numbers[i] + 1;
+            }
+            System.out.print(numbers[i]+" ");}
+        //System.out.println(Arrays.toString(numbers));
     }
 }
